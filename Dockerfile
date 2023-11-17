@@ -1,3 +1,3 @@
 FROM postgres
-COPY setup.sql /docker-entrypoint-initdb.d/
+COPY movies.sql /docker-entrypoint-initdb.d/
 
