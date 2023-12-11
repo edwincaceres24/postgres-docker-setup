@@ -8,7 +8,7 @@
 * Run the following command on main folder:
 
 ```
-docker-compose up
+docker compose up
 ```
 
 
@@ -24,7 +24,7 @@ docker-compose up
 * To erase cache on docker volume run this command:
 
 ```
-docker-compose build --no-cache
+docker compose build --no-cache
 ```
 
 ## Starting PGADMIN

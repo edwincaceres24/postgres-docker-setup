@@ -1,0 +1,18 @@
+{
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "rejectUnauthorized": true
+            }
+        },
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "psql-movie",
+            "database": "movies_side_project",
+            "username": "postgres"
+        }
+    ]
+}
