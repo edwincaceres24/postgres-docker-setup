@@ -1,14 +1,14 @@
-version: '3.1'
+version: '3.7'
 
 services:
   postgresdb:
-    image: postgres
+    image: postgres:latest
     restart: always
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: pass
     volumes:
-      - postgres_data:/var/lib/postgresql/data
+      - /var/lib/postgresql/data
       - ./movies.sql:/docker-entrypoint-initdb.d/movies.sql
 
   pgadmin:
@@ -22,5 +22,5 @@ services:
     depends_on:
       - postgresdb
 
-volumes:
-  postgres_data:
+# volumes:
+  # postgres_data:

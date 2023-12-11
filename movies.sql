@@ -1,7 +1,7 @@
-CREATE DATABASE IF NOT EXISTS movies_side_project ;
+CREATE DATABASE movies_side_project ;
 \c movies_side_project;
 
-CREATE TABLE IF NOT EXISTS movies (
+CREATE TABLE movies (
   movie_id INT PRIMARY KEY,
   title VARCHAR(100),
   release_year INT,
@@ -9,24 +9,24 @@ CREATE TABLE IF NOT EXISTS movies (
   genre_id INT
 );
 
-CREATE TABLE IF NOT EXISTS actors (
+CREATE TABLE actors (
   actor_id INT PRIMARY KEY,
   first_name VARCHAR(50),
   last_name VARCHAR(50)
 );
 
-CREATE TABLE IF NOT EXISTS directors ( 
+CREATE TABLE directors ( 
   director_id INT PRIMARY KEY,
   first_name VARCHAR(50),
   last_name VARCHAR(50)
 );
 
-CREATE TABLE IF NOT EXISTS genres (
+CREATE TABLE genres (
   genre_id INT PRIMARY KEY,
   genre_name VARCHAR(50)
 );
 
-CREATE TABLE IF NOT EXISTS movie_actors (
+CREATE TABLE movie_actors (
   movie_id INT,
   actor_id INT,
   PRIMARY KEY(movie_id, actor_id),
